@@ -167,21 +167,25 @@ int main(int argc, char ** argv)
 }
 
 
+/*
 
 double varidicFunction(const int count, ...) {
-	va_list ap;
-	int i;
-	double total = 0.0;
+va_list ap;
+int i;
+double total = 0.0;
 
-	__crt_va_start(ap, count);
+__crt_va_start(ap, count);
 
-	for (i = 0; i < count; ++i) {
-		total += __crt_va_arg(ap, double);
-	}
-	__crt_va_end(ap);
-	return total / count;
+for (i = 0; i < count; ++i) {
+total += __crt_va_arg(ap, double);
+}
+__crt_va_end(ap);
+return total / count;
 
 }
+
+*/
+
 void functionPointer() {
 printf("hello this is a function pointer\n");
 }
